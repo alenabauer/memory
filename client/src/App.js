@@ -1,5 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Main from "./Components/Main";
+import Game from "./Components/Game";
 import "./App.css";
 
 function App() {
@@ -12,12 +14,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={() => <Main />} />
+        <Route path="/memory/:category/:level" component={() => <Game />} />
+      </Switch>
+    </Router>
   );
 }
 
