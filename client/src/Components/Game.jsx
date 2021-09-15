@@ -11,6 +11,9 @@ import vegCards3 from "../Data/vegetables/vegCards3";
 import placeCards1 from "../Data/places/placeCards1";
 import placeCards2 from "../Data/places/placeCards2";
 import placeCards3 from "../Data/places/placeCards3";
+import dirCards1 from "../Data/directions/dirCards1";
+import dirCards2 from "../Data/directions/dirCards2";
+import dirCards3 from "../Data/directions/dirCards3";
 
 function Game() {
 
@@ -21,6 +24,15 @@ function Game() {
     const curGame = category + level;
 
     switch(curGame) {
+        case "cat1lev1":
+            userCards = dirCards1;
+            break;
+        case "cat1lev2":
+            userCards = dirCards2;
+            break;
+        case "cat1lev3":
+            userCards = dirCards3;
+            break;
         case "cat3lev1":
             userCards = vegCards1;
             break;

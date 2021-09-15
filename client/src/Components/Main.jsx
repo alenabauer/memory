@@ -20,7 +20,7 @@ function Main() {
 
                 <p>Выбери категорию:</p>
                 <div className="category-choice">
-                <input type="radio" id="cat1" name="category" value="cat1" />
+                <input type="radio" id="cat1" name="category" value="cat1" required />
                 <label for="cat1">Стороны света</label>
                 <input type="radio" id="cat2" name="category" value="cat2" />
                 <label for="cat2">Напитки</label>
@@ -36,7 +36,7 @@ function Main() {
 
                 <p>Выбери уровень сложности:</p>
                 <div className="level-choice">
-                <input type="radio" id="lev1" name="level" value="lev1" />
+                <input type="radio" id="lev1" name="level" value="lev1" required />
                 <label for="lev1">Легкий</label>
                 <input type="radio" id="lev2" name="level" value="lev2" />
                 <label for="lev2">Средний</label>

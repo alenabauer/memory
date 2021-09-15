@@ -63,7 +63,6 @@ label {
 
 label:hover {
   background-color: #405863;
-  flex-grow: 2;
 }
 
 input[type="radio"]:checked + label {

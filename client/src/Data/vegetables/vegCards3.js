@@ -78,6 +78,22 @@ const vegCards3 = [
     {
         type: 'chili',
         image: "/imgs/vegetables/chili-img.png"
+    },
+    {
+        type: 'cabbage',
+        image: "/imgs/vegetables/cabbage-char.png"
+    },
+    {
+        type: 'cabbage',
+        image: "/imgs/vegetables/cabbage-img.png"
+    },
+    {
+        type: 'veggies',
+        image: "/imgs/vegetables/veggies-char.png"
+    },
+    {
+        type: 'veggies',
+        image: "/imgs/vegetables/veggies-img.png"
     }
 ];
 
