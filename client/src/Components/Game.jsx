@@ -5,6 +5,9 @@ import MemoryCard from "./MemoryCard";
 import fruitCards1 from "../Data/fruits/fruitCards1";
 import fruitCards2 from "../Data/fruits/fruitCards2";
 import fruitCards3 from "../Data/fruits/fruitCards3";
+import vegCards1 from "../Data/vegetables/vegCards1";
+import vegCards2 from "../Data/vegetables/vegCards2";
+import vegCards3 from "../Data/vegetables/vegCards3";
 
 function Game() {
 
@@ -12,13 +15,19 @@ function Game() {
 
     const {category, level} = useParams();
 
-    if (level === "lev1") {
+    if (level === "lev1" && category === "cat4") {
         userCards = fruitCards1;
-    } else if (level === "lev2") {
+    } else if (level === "lev2" && category === "cat4") {
         userCards = fruitCards2;
-    } else {
+    } else if (level === "lev3" && category === "cat4") {
         userCards = fruitCards3;
-    };
+    } else if (level === "lev1" && category === "cat3") {
+        userCards = vegCards1;
+    } else if (level === "lev2" && category === "cat3") {
+        userCards = vegCards2;
+    } else {
+        userCards = vegCards3;
+    }
 
     const history = useHistory();
 
