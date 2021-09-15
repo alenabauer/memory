@@ -8,6 +8,9 @@ import fruitCards3 from "../Data/fruits/fruitCards3";
 import vegCards1 from "../Data/vegetables/vegCards1";
 import vegCards2 from "../Data/vegetables/vegCards2";
 import vegCards3 from "../Data/vegetables/vegCards3";
+import placeCards1 from "../Data/places/placeCards1";
+import placeCards2 from "../Data/places/placeCards2";
+import placeCards3 from "../Data/places/placeCards3";
 
 function Game() {
 
@@ -15,19 +18,39 @@ function Game() {
 
     const {category, level} = useParams();
 
-    if (level === "lev1" && category === "cat4") {
-        userCards = fruitCards1;
-    } else if (level === "lev2" && category === "cat4") {
-        userCards = fruitCards2;
-    } else if (level === "lev3" && category === "cat4") {
-        userCards = fruitCards3;
-    } else if (level === "lev1" && category === "cat3") {
-        userCards = vegCards1;
-    } else if (level === "lev2" && category === "cat3") {
-        userCards = vegCards2;
-    } else {
-        userCards = vegCards3;
-    }
+    const curGame = category + level;
+
+    switch(curGame) {
+        case "cat3lev1":
+            userCards = vegCards1;
+            break;
+        case "cat3lev2":
+            userCards = vegCards2;
+            break;
+        case "cat3lev3":
+            userCards = vegCards3;
+            break;
+        case "cat4lev1":
+            userCards = fruitCards1;
+            break;
+        case "cat4lev2":
+            userCards = fruitCards2;
+            break;
+        case "cat4lev3":
+            userCards = fruitCards3;
+            break;
+        case "cat6lev1":
+            userCards = placeCards1;
+            break;
+        case "cat6lev2":
+            userCards = placeCards2;
+            break;
+        case "cat6lev3":
+            userCards = placeCards3;
+            break;
+        default:
+            userCards = fruitCards1;
+    };
 
     const history = useHistory();
 
