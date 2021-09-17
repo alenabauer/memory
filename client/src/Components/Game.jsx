@@ -14,6 +14,9 @@ import placeCards3 from "../Data/places/placeCards3";
 import dirCards1 from "../Data/directions/dirCards1";
 import dirCards2 from "../Data/directions/dirCards2";
 import dirCards3 from "../Data/directions/dirCards3";
+import drinkCards1 from "../Data/drinks/drinkCards1";
+import drinkCards2 from "../Data/drinks/drinkCards2";
+import drinkCards3 from "../Data/drinks/drinkCards3";
 
 function Game() {
 
@@ -32,6 +35,15 @@ function Game() {
             break;
         case "cat1lev3":
             userCards = dirCards3;
+            break;
+        case "cat2lev1":
+            userCards = drinkCards1;
+            break;
+        case "cat2lev2":
+            userCards = drinkCards2;
+            break;
+        case "cat2lev3":
+            userCards = drinkCards3;
             break;
         case "cat3lev1":
             userCards = vegCards1;
