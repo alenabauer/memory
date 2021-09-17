@@ -1,4 +1,4 @@
-const flavorCards2 = [
+const flavorCards3 = [
     {
         type: 'spicy',
         image: "/imgs/flavors/spicy-char.png"
@@ -62,7 +62,39 @@ const flavorCards2 = [
     {
         type: 'qingdan',
         image: "/imgs/flavors/qingdan-img.png"
+    },
+    {
+        type: 'zhongla',
+        image: "/imgs/flavors/zhongla-char.png"
+    },
+    {
+        type: 'zhongla',
+        image: "/imgs/flavors/zhongla-img.png"
+    },
+    {
+        type: 'veryspicy',
+        image: "/imgs/flavors/veryspicy-char.png"
+    },
+    {
+        type: 'veryspicy',
+        image: "/imgs/flavors/veryspicy-img.png"
+    },
+    {
+        type: 'mildspicy',
+        image: "/imgs/flavors/mildspicy-char.png"
+    },
+    {
+        type: 'mildspicy',
+        image: "/imgs/flavors/mildspicy-img.png"
+    },
+    {
+        type: 'flavor',
+        image: "/imgs/flavors/flavor-char.png"
+    },
+    {
+        type: 'flavor',
+        image: "/imgs/flavors/flavor-img.png"
     }
 ];
 
-export default flavorCards2;
+export default flavorCards3;
